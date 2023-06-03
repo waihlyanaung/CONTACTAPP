@@ -4,7 +4,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ['Roboto', 'Arial', 'sans-serif'],
+      serif: ['Georgia', 'serif'],
+      // Add more font families as needed
+    },
+    extend: {
+      colors: {
+        'primary'  :" #FFFFFF"
+      },
+      fontFamily : {
+        'nunito' : 'Nunito'
+      }
+    },
   },
   plugins: [],
 }
