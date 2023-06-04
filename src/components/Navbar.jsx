@@ -2,13 +2,18 @@ import React from "react";
 import { CgProfile } from "react-icons/cg";
 import {LuLogOut} from 'react-icons/lu';
 import {FcBusinessContact} from 'react-icons/fc'
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const user = useSelector(state => state.auth.user);
+  console.log(user);
   return (
     <div >
       <nav className="bg-gray-200 border-gray-200 dark:bg-gray-900">
         <div className=" flex flex-wrap items-center justify-between  p-4">
-            <p className="text-3xl font-bold flex items-center gap-2"><FcBusinessContact/>contaKt</p>
+          <p className="text-3xl font-bold flex items-center gap-2"><FcBusinessContact />contaKt</p>
+          <h1>{user?.name}</h1>
+          <h1>{user?.email}</h1>
           <div className="flex items-center gap-3 md:order-2">
             <button
               type="button"
