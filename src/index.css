@@ -4,5 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@media (max-witdth:992px){
+    html,body{
+        overflow-x: hidden;
+        width: 100%;
+    }
+}
 
