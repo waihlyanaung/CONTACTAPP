@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import { FiPlus } from "react-icons/fi";
 import { RiContactsLine } from "react-icons/ri";
 import {AiOutlineHeart} from 'react-icons/ai'
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -44,7 +45,7 @@ const Sidebar = () => {
               >
                 <span className="flex items-center gap-4 ml-3 whitespace-nowrap">
                   <FiPlus />
-                  Create Contact
+                  <Link to="/creatContact"><button className="">Create Contact</button></Link>
                 </span>
               </a>
             </li>
